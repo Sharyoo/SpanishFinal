@@ -1,0 +1,30 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+html, body {
+    height:100%;
+    width:100%;
+    overflow-x: hidden;
+}
+
+.header {
+    height:100%;
+    background-color: bisque;
+    /* background-image: url("./images/bg.jpg"); */
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    position:absolute;
+    z-index:100;
+    text-shadow: #FC0 1px 1px 1px;
+}
