@@ -1,4 +1,4 @@
-$("#Avila, #Segovia, #Soria, #Salamanca, #Zamora, #Leon, #Palencia, #Valladolid, #Capital").hover(function() {
+$("#Avila, #Segovia, #Soria, #Salamanca, #Zamora, #Leon, #Palencia, #Valladolid, #Burgos1, #Burgos2, #Capital").hover(function() {
     $(this).css('fill', 'green');
     var newElement = $('<div class="new-element">' + this.id + '</div>');
     $("body").append(newElement);

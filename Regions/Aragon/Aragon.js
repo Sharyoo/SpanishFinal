@@ -1,5 +1,5 @@
 $("#Teruel, #Zaragoza, #Huesca, #Capital").hover(function() {
-    console.log("this.id");
+    console.log(this.id);
     $(this).css('fill', 'green');
     var newElement = $('<div class="new-element">' + this.id + '</div>');
     $("body").append(newElement);
