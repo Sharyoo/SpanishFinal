@@ -2,10 +2,12 @@ $("#Madrid1, #Madrid2, #Capital").hover(function() {
 
   if (this.id == "Madrid1") {
     $("#Madrid2").css('fill', 'green');
+    $("#Capital").css('fill', 'green');
   }
 
   if (this.id == "Madrid2") {
     $("#Madrid1").css('fill', 'green');
+    $("#Capital").css('fill', 'green');
   }
 
   $(this).css('fill', 'green');
@@ -16,10 +18,12 @@ $("#Madrid1, #Madrid2, #Capital").hover(function() {
 
   if (this.id == "Madrid1") {
     $("#Madrid2").css('fill', 'white');
+    $("#Capital").css('fill', 'white');
   }
 
   if (this.id == "Madrid2") {
     $("#Madrid1").css('fill', 'white');
+    $("#Capital").css('fill', 'white');
   }
 
   $(this).css('fill', 'white');

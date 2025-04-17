@@ -6,6 +6,9 @@ $("#Avila, #Segovia, #Soria, #Salamanca, #Zamora, #Leon, #Palencia, #Valladolid,
     else if (this.id == "Burgos2") {
         $("#Burgos1").css('fill', 'green');
     }
+    else if (this.id == "Valladolid") {
+        $("#Capital").css('fill', 'green');
+    }
 
     $(this).css('fill', 'green');
     var newElement = $('<div class="new-element">' + this.id + '</div>');
@@ -18,6 +21,9 @@ $("#Avila, #Segovia, #Soria, #Salamanca, #Zamora, #Leon, #Palencia, #Valladolid,
     }
     else if (this.id == "Burgos2") {
         $("#Burgos1").css('fill', 'white');
+    }
+    else if (this.id == "Valladolid") {
+        $("#Capital").css('fill', 'white');
     }
 
     $(this).css('fill', 'white');
