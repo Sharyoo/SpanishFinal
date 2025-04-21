@@ -95,6 +95,34 @@ h2 {
     background-size: cover;
 }
 
+.map .label {
+    position:absolute;
+    width:100%;
+    height:5%;
+    top:0%;
+
+    display:flex;
+    justify-content: center;
+    align-items:end;
+
+    color: white;
+    text-shadow: #FC0 1px 1px 1px;
+    font-size: 2rem;
+
+    background-color:rgb(20, 3, 2);
+}
+
+.map .svg {
+    position:absolute;
+    width:100%;
+    height:95%;
+    top:5%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #Castilla, #Andalusia, #Murcia, #Valencia, #Catalonia, #Extremadura, #Madrid, #Aragon, #Rioja, #Navarre, #Basque, #Cantabria, #Asturias, #Galicia, #Castille {
     fill:white;
 }
