@@ -2,14 +2,21 @@ $("#Cadiz, #Malaga, #Granada, #Almeria, #Jaen, #Cordoba, #Sevilla, #Huelva, #Cap
     
     if (this.id == "Capital") {
         $("#Sevilla").css('fill', 'white');
+        $(this).css('fill', 'yellow');
+        var newElement = $('<div class="new-element-long">' + "Sevilla (Capital)" + '</div>');
+         $("body").append(newElement);
     }
     else if (this.id == "Sevilla") {
-        $("#Capital").css('fill', 'green');
+        $("#Capital").css('fill', 'yellow');
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element">' + this.id + '</div>');
+         $("body").append(newElement);
     }
-
-    $(this).css('fill', 'green');
-    var newElement = $('<div class="new-element">' + this.id + '</div>');
-    $("body").append(newElement);
+    else {
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element">' + this.id + '</div>');
+         $("body").append(newElement);
+    }
 
 }, function() {
 
@@ -19,4 +26,5 @@ $("#Cadiz, #Malaga, #Granada, #Almeria, #Jaen, #Cordoba, #Sevilla, #Huelva, #Cap
 
     $(this).css('fill', 'white');
     $("body").find('.new-element').remove();
+    $("body").find('.new-element-long').remove();
 })

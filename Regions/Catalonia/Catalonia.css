@@ -86,11 +86,29 @@ h2 {
     font-size: 5rem;
     z-index: 1000;
     position:absolute;
-    top:150%;
+    top:170%;
     left:80%;
     translate: -50% -50%;
     border:2px black solid;
     color:black;
     background-color: rgba(255, 255, 255, 0.316);
     box-shadow: 5px 5px 10px black;
+}
+
+.new-element-long {
+    font-size: 3rem;
+    z-index: 1000;
+    position:absolute;
+    top:170%;
+    left:80%;
+    translate: -50% -50%;
+    border:2px black solid;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.316);
+    box-shadow: 5px 5px 10px black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-wrap-mode:nowrap;
 }
