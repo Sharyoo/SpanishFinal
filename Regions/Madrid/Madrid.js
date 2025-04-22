@@ -3,12 +3,12 @@ $("#Madrid, #Capital").hover(function() {
   if (this.id == "Madrid") {
     $(this).css('fill', 'green');
     $("#Capital").css('fill', 'yellow');
-    var newElement = $('<div class="new-element">' + 'Madrid' + '</div>');
+    var newElement = $('<div class="new-element-long">' + 'Provincia de Madrid' + '</div>');
     $("body").append(newElement);
   }
   else if (this.id == "Capital") {
     $(this).css('fill', 'yellow');
-    var newElement = $('<div class="new-element-long">' + 'Madrid (Capital)' + '</div>');
+    var newElement = $('<div class="new-element-long">' + 'Madrid (La capital)' + '</div>');
     $("body").append(newElement);
   }
   else {

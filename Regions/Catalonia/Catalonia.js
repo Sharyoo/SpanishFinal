@@ -8,7 +8,7 @@ $("#Tarragona, #Barcelona, #Girona, #Lleida, #Capital").hover(function() {
   } 
   else if (this.id == "Capital") {
     $(this).css('fill', 'yellow');
-    var newElement = $('<div class="new-element-long">' + 'Barcelona (Capital)' + '</div>');
+    var newElement = $('<div class="new-element-long">' + 'Barcelona (La capital)' + '</div>');
     $("body").append(newElement);
   }
   else {

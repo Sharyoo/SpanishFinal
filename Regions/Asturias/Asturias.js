@@ -3,13 +3,13 @@ $("#Asturias, #Capital").hover(function() {
   if (this.id == "Capital") {
       $("#Asturias").css('fill', 'white');
       $(this).css('fill', 'yellow');
-      var newElement = $('<div class="new-element-long">' + "Santander (Capital)" + '</div>');
+      var newElement = $('<div class="new-element-long">' + "Oviedo (La capital)" + '</div>');
        $("body").append(newElement);
   }
   else if (this.id == "Asturias") {
     $(this).css('fill', 'green');
     $("#Capital").css('fill', 'yellow');
-    var newElement = $('<div class="new-element">' + this.id + '</div>');
+    var newElement = $('<div class="new-element-long">' + 'Provincia de Asturias' + '</div>');
        $("body").append(newElement);
   }
   else {

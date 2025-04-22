@@ -131,7 +131,7 @@ $("#CastillaMancha, #Andalucia, #Murcia, #Valencia, #Catalonia, #Extremadura, #M
     
     if (this.id == "France") {
         $(this).css('fill', '#382d2d');
-        var newElement = $('<div class="new-element">' + this.id + '</div>');
+        var newElement = $('<div class="new-element">' + 'Francia' + '</div>');
         $("body").append(newElement);
     }
     else if (this.id == "Portugal") {
@@ -141,23 +141,23 @@ $("#CastillaMancha, #Andalucia, #Murcia, #Valencia, #Catalonia, #Extremadura, #M
     }
     else if (this.id == "Morocco") {
         $(this).css('fill', '#382d2d');
-        var newElement = $('<div class="new-element">' + this.id + '</div>');
+        var newElement = $('<div class="new-element">' + 'Marruecos' + '</div>');
         $("body").append(newElement);
     }
     else if (this.id == "CastillaMancha") {
         $(this).css('fill', 'green');
-        var newElement = $('<div class="new-element-long">' + 'Castilla la Mancha' + '</div>');
+        var newElement = $('<div class="new-element-long">' + 'Castilla-La Mancha' + '</div>');
         $("body").append(newElement);
     }
     else if (this.id == "CastillaLeon") {
         $(this).css('fill', 'green');
-        var newElement = $('<div class="new-element-long">' + 'Castilla y Leon' + '</div>');
+        var newElement = $('<div class="new-element-long">' + 'Castilla y León' + '</div>');
         $("body").append(newElement);
     }
     else if (this.id == "Madrid") {
         $(this).css('fill', 'green');
         $("#Capital").css('fill', 'yellow');
-        var newElement = $('<div class="new-element">' + this.id + '</div>');
+        var newElement = $('<div class="new-element-long">' + 'Comunidad de Madrid' + '</div>');
         $("body").append(newElement);
     } else if (this.id == "Capital") {
         $(this).css('fill', 'yellow');
@@ -166,7 +166,7 @@ $("#CastillaMancha, #Andalucia, #Murcia, #Valencia, #Catalonia, #Extremadura, #M
     }
     else if (this.id == "Basque") {
         $(this).css('fill', 'green');
-        var newElement = $('<div class="new-element-long">' + "Basque Country" + '</div>');
+        var newElement = $('<div class="new-element-long">' + "País Vasco" + '</div>');
         $("body").append(newElement);
     }
     else if (this.id == "Balearic1" || this.id == "Balearic2" || this.id == "Balearic3" || this.id == "Balearic4") {
@@ -174,7 +174,7 @@ $("#CastillaMancha, #Andalucia, #Murcia, #Valencia, #Catalonia, #Extremadura, #M
         $("#Balearic2").css('fill', 'green');
         $("#Balearic3").css('fill', 'green');
         $("#Balearic4").css('fill', 'green');
-        var newElement = $('<div class="new-element-long">' + "Balearic Islands" + '</div>');
+        var newElement = $('<div class="new-element-long">' + "Islas Baleares" + '</div>');
         $("body").append(newElement);
     } else if (this.id == "Canary1" || this.id == "Canary2" || this.id == "Canary3" || this.id == "Canary4" || this.id == "Canary5" || this.id == "Canary6" || this.id == "Canary7") {
         $("#Canary1").css('fill', 'green');
@@ -184,7 +184,47 @@ $("#CastillaMancha, #Andalucia, #Murcia, #Valencia, #Catalonia, #Extremadura, #M
         $("#Canary5").css('fill', 'green');
         $("#Canary6").css('fill', 'green');
         $("#Canary7").css('fill', 'green');
-        var newElement = $('<div class="new-element-long">' + "Canary Islands" + '</div>');
+        var newElement = $('<div class="new-element-long">' + "Islas Canarias" + '</div>');
+        $("body").append(newElement);
+    }
+    else if (this.id == "Andalucia") {
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element">' + 'Andalucía' + '</div>');
+        $("body").append(newElement);
+    }
+    else if (this.id == "Aragon") {
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element">' + 'Aragón' + '</div>');
+        $("body").append(newElement);
+    }
+    else if (this.id == "Asturias") {
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element-long">' + 'Principado de Asturias' + '</div>');
+        $("body").append(newElement);
+    }
+    else if (this.id == "Catalonia") {
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element">' + 'Cataluña' + '</div>');
+        $("body").append(newElement);
+    }
+    else if (this.id == "Navarre") {
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element">' + 'Navarra' + '</div>');
+        $("body").append(newElement);
+    }
+    else if (this.id == "Valencia") {
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element-long">' + 'Comunidad Valenciana' + '</div>');
+        $("body").append(newElement);
+    }
+    else if (this.id == "Murcia") {
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element-long">' + 'Región de Murcia' + '</div>');
+        $("body").append(newElement);
+    }
+    else if (this.id == "Rioja") {
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element">' + 'La Rioja' + '</div>');
         $("body").append(newElement);
     }
     else {
@@ -249,23 +289,29 @@ $("#CastillaMancha, #Andalucia, #Murcia, #Valencia, #Catalonia, #Extremadura, #M
     else {
         $(this).css('fill', 'white');
         $("body").find('.new-element').remove();
+        $("body").find('.new-element-long').remove();
     }
 
 })
 
-$("#CastillaMancha, #Andalucia, #Murcia, #Valencia, #Catalonia, #Extremadura, #Madrid, #Aragon, #Rioja, #Navarre, #Basque, #Cantabria, #Asturias, #Galicia, #CastillaLeon, #Balearic1, #Balearic2, #Balearic3, #Balearic4, #Canary1, #Canary2, #Canary3, #Canary4, #Canary5, #Canary6, #Canary7").click(function() {
+$("#CastillaMancha, #Andalucia, #Murcia, #Valencia, #Catalonia, #Extremadura, #Madrid, #Aragon, #Rioja, #Navarre, #Basque, #Cantabria, #Asturias, #Galicia, #CastillaLeon, #Balearic1, #Balearic2, #Balearic3, #Balearic4, #Canary1, #Canary2, #Canary3, #Canary4, #Canary5, #Canary6, #Canary7, #Capital").click(function() {
     if (this.id == "CastillaMancha") {
         window.open("./Regions/CastillaMancha/Castilla.html");
     } 
     else if (this.id == "CastillaLeon") {
         window.open("./Regions/CastillaLeon/Castille.html");
-    } else if (this.id == "Andalucia") {
+    } 
+    else if (this.id == "Andalucia") {
         window.open("./Regions/Andalusia/Andalusia.html");
     }
     else if (this.id == "Balearic1" || this.id == "Balearic2" || this.id == "Balearic3" || this.id == "Balearic4") {
         window.open("./Regions/Balearic/Balearic.html");
-    } else if (this.id == "Canary1" || this.id == "Canary2" || this.id == "Canary3" || this.id == "Canary4" || this.id == "Canary5" || this.id == "Canary6" || this.id == "Canary7") {
+    } 
+    else if (this.id == "Canary1" || this.id == "Canary2" || this.id == "Canary3" || this.id == "Canary4" || this.id == "Canary5" || this.id == "Canary6" || this.id == "Canary7") {
         window.open("./Regions/Canary/Canary.html");
+    }
+    else if (this.id == "Capital") {
+        window.open("./Regions/Madrid/Madrid.html");
     }
     else {
         window.open("./Regions/" + this.id + "/" + this.id + ".html");

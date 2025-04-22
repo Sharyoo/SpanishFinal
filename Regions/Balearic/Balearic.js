@@ -3,7 +3,7 @@ $("#Ibiza, #Formentera, #Mallorca, #Menorca, #Capital").hover(function() {
   if (this.id == "Capital") {
       $("#Mallorca").css('fill', 'white');
       $(this).css('fill', 'yellow');
-      var newElement = $('<div class="new-element-long">' + "Palma (Capital)" + '</div>');
+      var newElement = $('<div class="new-element-long">' + "Palma (La capital)" + '</div>');
        $("body").append(newElement);
   }
   else if (this.id == "Mallorca") {

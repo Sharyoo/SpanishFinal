@@ -89,7 +89,7 @@ h2 {
     font-size: 5rem;
     z-index: 1000;
     position:absolute;
-    top:120%;
+    top:118%;
     left:20%;
     translate: -50% -50%;
     border:2px black solid;
@@ -104,7 +104,7 @@ h2 {
     font-size: 3rem;
     z-index: 1000;
     position:absolute;
-    top:120%;
+    top:118%;
     left:20%;
     translate: -50% -50%;
     border:2px black solid;

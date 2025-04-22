@@ -8,7 +8,7 @@ $("#Albacete, #Cuenca, #Guadalajara, #CiudadReal, #Toledo, #Capital").hover(func
   } 
   else if (this.id == "Capital") {
     $(this).css('fill', 'yellow');
-    var newElement = $('<div class="new-element-long">' + 'Toledo (Capital)' + '</div>');
+    var newElement = $('<div class="new-element-long">' + 'Toledo (La capital)' + '</div>');
     $("body").append(newElement);
   } 
   else if (this.id == "CiudadReal") {

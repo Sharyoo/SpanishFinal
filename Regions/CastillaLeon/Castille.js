@@ -20,7 +20,17 @@ $("#Avila, #Segovia, #Soria, #Salamanca, #Zamora, #Leon, #Palencia, #Valladolid,
     }
     else if (this.id == "Capital") {
         $(this).css('fill', 'yellow');
-        var newElement = $('<div class="new-element-long">' + 'Valladolid (Capital)' + '</div>');
+        var newElement = $('<div class="new-element-long">' + 'Valladolid (La capital)' + '</div>');
+        $("body").append(newElement);
+    }
+    else if (this.id == "Avila") {
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element">' + 'Ávila' + '</div>');
+        $("body").append(newElement);
+    }
+    else if (this.id == "Leon") {
+        $(this).css('fill', 'green');
+        var newElement = $('<div class="new-element">' + 'León' + '</div>');
         $("body").append(newElement);
     }
     else {

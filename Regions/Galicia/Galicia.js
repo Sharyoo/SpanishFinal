@@ -3,13 +3,13 @@ $("#Ourense, #Lugo, #Coruna, #Pontevedra, #Capital").hover(function() {
   if (this.id == "Capital") {
       $("#Coruna").css('fill', 'white');
       $(this).css('fill', 'yellow');
-      var newElement = $('<div class="new-element-long">' + "Santiago de Compostela (Capital)" + '</div>');
+      var newElement = $('<div class="new-element-long">' + "Santiago de Compostela (La capital)" + '</div>');
        $("body").append(newElement);
   }
   else if (this.id == "Coruna") {
     $(this).css('fill', 'green');
     $("#Capital").css('fill', 'yellow');
-    var newElement = $('<div class="new-element">' + this.id + '</div>');
+    var newElement = $('<div class="new-element">' + 'La Coruña' + '</div>');
     $("body").append(newElement);
   }
   else {

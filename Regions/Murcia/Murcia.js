@@ -3,11 +3,11 @@ $("#Murcia, #Capital").hover(function() {
   if (this.id == "Murcia") {
     $(this).css('fill', 'green');
     $("#Capital").css('fill', 'yellow');
-    var newElement = $('<div class="new-element-long">' + 'Region of Murcia' + '</div>');
+    var newElement = $('<div class="new-element-long">' + 'Provincia de Murcia' + '</div>');
     $("body").append(newElement);
   } else if (this.id == "Capital") {
     $("#Capital").css('fill', 'yellow');
-    var newElement = $('<div class="new-element-long">' + 'Murcia (Capital)' + '</div>');
+    var newElement = $('<div class="new-element-long">' + 'Murcia (La capital)' + '</div>');
     $("body").append(newElement);
   }
   else {

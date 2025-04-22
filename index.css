@@ -105,7 +105,7 @@ h2 {
     justify-content: center;
     align-items:end;
 
-    color: white;
+    color: black;
     text-shadow: #FC0 1px 1px 1px;
     font-size: 2rem;
 
@@ -132,21 +132,23 @@ h2 {
     font-size: 5rem;
     z-index: 1000;
     position:absolute;
-    top:130%;
-    left:85%;
+    top:175%;
+    left:75%;
     translate: -50% -50%;
     border:2px black solid;
     color:black;
     background-color: rgba(255, 255, 255, 0.316);
     box-shadow: 5px 5px 10px black;
+    color: black;
+    text-shadow: #FC0 1px 1px 1px;
 }
 
 .new-element-long {
     font-size: 3rem;
     z-index: 1000;
     position:absolute;
-    top:130%;
-    left:85%;
+    top:175%;
+    left:75%;
     translate: -50% -50%;
     border:2px black solid;
     color:black;
@@ -157,4 +159,24 @@ h2 {
     justify-content: center;
     flex-wrap: nowrap;
     text-wrap-mode:nowrap;
+    color: black;
+    text-shadow: #FC0 1px 1px 1px;
+}
+
+.overview-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:200%;
+    height:5%;
+    left:0%;
+    width:20%;
+    border: 2px black solid;
+    border-radius: 50px;
+    color:white;
+}
+
+.overview-button:hover {
+    background-color: rgba(119, 99, 232, 0.434);
 }

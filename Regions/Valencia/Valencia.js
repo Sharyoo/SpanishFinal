@@ -16,7 +16,12 @@ $("#Alicante, #Valencia1, #Valencia2, #Castellon, #Capital").hover(function() {
   } 
   else if (this.id == "Capital") {
     $(this).css('fill', 'yellow');
-    var newElement = $('<div class="new-element-long">' + 'Valencia (Capital)' + '</div>');
+    var newElement = $('<div class="new-element-long">' + 'Valencia (La capital)' + '</div>');
+    $("body").append(newElement);
+  }
+  else if (this.id == "Castellon") {
+    $(this).css('fill', 'green');
+    var newElement = $('<div class="new-element">' + 'Castellón' + '</div>');
     $("body").append(newElement);
   }
   else {

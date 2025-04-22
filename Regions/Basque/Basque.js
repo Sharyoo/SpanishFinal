@@ -3,12 +3,17 @@ $("#Alava, #Guipuzcoa, #Vizcaya, #Capital").hover(function() {
   if (this.id == "Alava") {
     $(this).css('fill', 'green');
     $("#Capital").css('fill', 'yellow');
-    var newElement = $('<div class="new-element">' + this.id + '</div>');
+    var newElement = $('<div class="new-element">' + 'Álava' + '</div>');
     $("body").append(newElement);
   }
   else if (this.id == "Capital") {
     $(this).css('fill', 'yellow');
-    var newElement = $('<div class="new-element-long">' + 'Vitoria-Gasteiz (Capital)' + '</div>');
+    var newElement = $('<div class="new-element-long">' + 'Vitoria-Gasteiz (La capital)' + '</div>');
+    $("body").append(newElement);
+  }
+  else if (this.id == "Guipuzcoa") {
+    $(this).css('fill', 'green');
+    var newElement = $('<div class="new-element">' + 'Guipúzcoa' + '</div>');
     $("body").append(newElement);
   }
   else {

@@ -12,7 +12,7 @@ html, body {
 .header {
     height:100%;
     background-color: bisque;
-    background-image: url("./images/bg.jpg");
+    background-image: url("./images/bg3.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -36,6 +36,9 @@ h2 {
     display:flex;
     align-items: center;
     justify-content: center;
+    background-image: url("./images/bg4.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .map .label {
@@ -48,7 +51,7 @@ h2 {
     justify-content: center;
     align-items:end;
 
-    color: white;
+    color: black;
     text-shadow: #FC0 1px 1px 1px;
     font-size: 2rem;
 }
@@ -86,21 +89,23 @@ h2 {
     font-size: 5rem;
     z-index: 1000;
     position:absolute;
-    top:130%;
-    left:82%;
+    top:120%;
+    left:20%;
     translate: -50% -50%;
     border:2px black solid;
     color:black;
     background-color: rgba(255, 255, 255, 0.316);
     box-shadow: 5px 5px 10px black;
+    color: black;
+    text-shadow: #FC0 1px 1px 1px;
 }
 
 .new-element-long {
     font-size: 3rem;
     z-index: 1000;
     position:absolute;
-    top:130%;
-    left:80%;
+    top:120%;
+    left:24%;
     translate: -50% -50%;
     border:2px black solid;
     color:black;
@@ -111,4 +116,6 @@ h2 {
     justify-content: center;
     flex-wrap: nowrap;
     text-wrap-mode:nowrap;
+    color: black;
+    text-shadow: #FC0 1px 1px 1px;
 }

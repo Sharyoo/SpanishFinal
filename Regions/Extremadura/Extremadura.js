@@ -8,7 +8,12 @@ $("#Badajoz, #Caceres, #Capital").hover(function() {
   }
   else if (this.id == "Capital") {
     $(this).css('fill', 'yellow');
-    var newElement = $('<div class="new-element-long">' + 'Mérida (Capital)' + '</div>');
+    var newElement = $('<div class="new-element-long">' + 'Mérida (La capital)' + '</div>');
+    $("body").append(newElement);
+  }
+  else if (this.id == "Caceres") {
+    $(this).css('fill', 'green');
+    var newElement = $('<div class="new-element">' + 'Cáceres' + '</div>');
     $("body").append(newElement);
   }
   else {
