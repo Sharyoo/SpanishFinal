@@ -11,9 +11,15 @@ $("#Murcia, #Capital").hover(function() {
     $("body").append(newElement);
   }
   else {
+
+    if (this.id == "Murcia") {
+      $("#Capital").css('fill', 'white');
+    }
+
     $(this).css('fill', 'green');
     var newElement = $('<div class="new-element">' + this.id + '</div>');
     $("body").append(newElement);
+
   }
 
 }, function() {

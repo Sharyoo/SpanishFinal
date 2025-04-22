@@ -1,15 +1,7 @@
-$("#Madrid1, #Madrid2, #Capital").hover(function() {
+$("#Madrid, #Capital").hover(function() {
 
-  if (this.id == "Madrid1") {
+  if (this.id == "Madrid") {
     $(this).css('fill', 'green');
-    $("#Madrid2").css('fill', 'green');
-    $("#Capital").css('fill', 'yellow');
-    var newElement = $('<div class="new-element">' + 'Madrid' + '</div>');
-    $("body").append(newElement);
-  }
-  else if (this.id == "Madrid2") {
-    $(this).css('fill', 'green');
-    $("#Madrid1").css('fill', 'green');
     $("#Capital").css('fill', 'yellow');
     var newElement = $('<div class="new-element">' + 'Madrid' + '</div>');
     $("body").append(newElement);
@@ -27,13 +19,7 @@ $("#Madrid1, #Madrid2, #Capital").hover(function() {
 
 }, function() {
 
-  if (this.id == "Madrid1") {
-    $("#Madrid2").css('fill', 'white');
-    $("#Capital").css('fill', 'white');
-  }
-
-  if (this.id == "Madrid2") {
-    $("#Madrid1").css('fill', 'white');
+  if (this.id == "Madrid") {
     $("#Capital").css('fill', 'white');
   }
 
