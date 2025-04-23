@@ -250,7 +250,7 @@ $("#CastillaMancha, #Andalucia, #Murcia, #Valencia, #Catalonia, #Extremadura, #M
     else if (this.id == "Madrid") {
         $(this).css('fill', 'white');
         $("#Capital").css('fill', 'white');
-        $("body").find('.new-element').remove();
+        $("body").find('.new-element-long').remove();
     }
     else if (this.id == "CastillaMancha") {
         $(this).css('fill', 'white');
@@ -296,24 +296,24 @@ $("#CastillaMancha, #Andalucia, #Murcia, #Valencia, #Catalonia, #Extremadura, #M
 
 $("#CastillaMancha, #Andalucia, #Murcia, #Valencia, #Catalonia, #Extremadura, #Madrid, #Aragon, #Rioja, #Navarre, #Basque, #Cantabria, #Asturias, #Galicia, #CastillaLeon, #Balearic1, #Balearic2, #Balearic3, #Balearic4, #Canary1, #Canary2, #Canary3, #Canary4, #Canary5, #Canary6, #Canary7, #Capital").click(function() {
     if (this.id == "CastillaMancha") {
-        window.open("./Regions/CastillaMancha/Castilla.html");
+        window.location.href = "./Regions/CastillaMancha/Castilla.html";
     } 
     else if (this.id == "CastillaLeon") {
-        window.open("./Regions/CastillaLeon/Castille.html");
+        window.location.href = "./Regions/CastillaLeon/Castille.html";
     } 
     else if (this.id == "Andalucia") {
-        window.open("./Regions/Andalusia/Andalusia.html");
+        window.location.href = "./Regions/Andalusia/Andalusia.html";
     }
     else if (this.id == "Balearic1" || this.id == "Balearic2" || this.id == "Balearic3" || this.id == "Balearic4") {
-        window.open("./Regions/Balearic/Balearic.html");
+        window.location.href = "./Regions/Balearic/Balearic.html";
     } 
     else if (this.id == "Canary1" || this.id == "Canary2" || this.id == "Canary3" || this.id == "Canary4" || this.id == "Canary5" || this.id == "Canary6" || this.id == "Canary7") {
-        window.open("./Regions/Canary/Canary.html");
+        window.location.href = "./Regions/Canary/Canary.html";
     }
     else if (this.id == "Capital") {
-        window.open("./Regions/Madrid/Madrid.html");
+        window.location.href = "./Regions/Madrid/Madrid.html";
     }
     else {
-        window.open("./Regions/" + this.id + "/" + this.id + ".html");
+        window.location.href = "./Regions/" + this.id + "/" + this.id + ".html";
     }
 })

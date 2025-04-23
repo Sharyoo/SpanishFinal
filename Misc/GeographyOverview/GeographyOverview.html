@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Geography</title>
+  <link rel="stylesheet" href="./GeographyOverview.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+  <div class="main-container">
+    
+
+    <div class="image-list">
+      <div class="info-box" id = "#Mountains", data-title="Mountain Ranges" data-text="Spain is home to several prominent mountain ranges that shape its diverse landscape. The Pyrenees Mountains form a natural border between Spain and France in the northeast. To the northwest lies the Cantabrian Mountains, running parallel to the northern coast. Further inland, the Sistema Ibérica Mountains (or Iberian System) extend across eastern Spain, from the north-central region down toward the Mediterranean. Together, these mountain systems contribute to Spain’s rich ecological variety and cultural diversity."
+      , data-src1="./images/Pyrenees.jpg", data-id1 = "Pyrenees", data-src2="./images/Cantabrian.jpg", data-id2 = "Cantabrian", data-src3="./images/SistemaIberico.jpg", data-id3 = "SistemaIberico">
+        <img src="./images/Mountain.jpg" alt="Barcelona">
+      </div>
+      <div class="info-box" data-title="Vast Plateaus" data-text="Spain's interior is dominated by expansive plateaus, the most significant of which is the Meseta Central. This large, high plateau sits at the heart of the Iberian Peninsula and is divided into northern and southern sub-plateaus by the Sistema Central mountain range. The Meseta Central is one of the oldest geological formations in Europe and has an average elevation of around 600 to 700 meters above sea level. Surrounded by various mountain systems, the plateau influences the climate and agriculture of the region, leading to hot, dry summers and cold winters. It also plays a central role in Spain’s geography, shaping the layout of rivers, cities, and transportation routes. The Meseta Central is home to major cities like Madrid and Valladolid, making it not only a physical but also a cultural and political core of the country."
+      , data-src1="./images/Plateau1.jpg", data-id1 = "Plateau1", data-src2="./images/Plateau2.jpg", data-id2 = "Plateau2", data-src3="./images/Plateau3.jpg", data-id3 = "Plateau3">
+        <img src="./images/Meseta.jpg" alt="Flamenco">
+      </div>
+      <div class="info-box" data-title="Coastal Plains" data-text="Spain's coastal plains are narrow lowland areas that stretch along the country's diverse coastline, providing a contrast to its mountainous interior. The coastal plains are key to Spain's economy, supporting tourism, trade, and farming, and they host many major cities and ports, such as Barcelona, Valencia, and Seville. Though generally narrow, these plains are vital transition zones between the sea and inland regions, contributing to Spain’s geographical and cultural richness."
+      , data-src1="./images/Coastal1.jpg", data-id1 = "Coastal1", data-src2="./images/Coastal2.jpg", data-id2 = "Coastal2", data-src3="./images/Coastal3.jpg", data-id3 = "Coastal3">
+        <img src="./images/Coastal.jpg" alt="Toledo">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('.info-box').hover(function() {
+        <!-- $('.main-container').find('.info-display').remove(); -->
+        const title = $(this).data('title');
+        const text = $(this).data('text');
+        const src1 = $(this).data('src1');
+        const id1 = $(this).data('id1');
+        const src2 = $(this).data('src2');
+        const id2 = $(this).data('id2');
+        const src3 = $(this).data('src3');
+        const id3 = $(this).data('id3');
+        $('.main-container').append('<div class="info-display" id = "infoDisplay"></div>')
+        $('.info-display').html(`<h2>${title}</h2><p><span>${text}</span></p><div class="image-container"><img src = ${src1} id = ${id1}><img src = ${src2} id = ${id2}><img src = ${src3} id = ${id3}></div>`);
+      }, function() {
+        $('.main-container').find('.info-display').remove();
+      });
+    });
+
+    $(document).ready(function() {
+      $('.main-container').on('mouseenter', '.info-display .image-container img', function() {
+        console.log(this.id);
+      }).on('mouseleave', '.info-display .image-container img', function() {
+        console.log("Image unhovered");
+      });
+    });
+  </script>
+
+</body>
+</html>
