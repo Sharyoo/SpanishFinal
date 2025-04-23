@@ -12,10 +12,6 @@ $("#Murcia, #Capital").hover(function() {
   }
   else {
 
-    if (this.id == "Murcia") {
-      $("#Capital").css('fill', 'white');
-    }
-
     $(this).css('fill', 'green');
     var newElement = $('<div class="new-element">' + this.id + '</div>');
     $("body").append(newElement);
@@ -23,6 +19,10 @@ $("#Murcia, #Capital").hover(function() {
   }
 
 }, function() {
+
+  if (this.id == "Murcia") {
+    $("#Capital").css('fill', 'white');
+  }
 
   $(this).css('fill', 'white');
   $("body").find('.new-element').remove();
