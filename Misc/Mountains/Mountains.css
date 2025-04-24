@@ -90,8 +90,8 @@ h2 {
   font-size: 5rem;
   z-index: 1000;
   position:absolute;
-  top:117%;
-  left:11%;
+  top:175%;
+  left:75%;
   translate: -50% -50%;
   border:2px black solid;
   color:black;
@@ -105,8 +105,8 @@ h2 {
   font-size: 3rem;
   z-index: 1000;
   position:absolute;
-  top:117%;
-  left:11%;
+  top:175%;
+  left:75%;
   translate: -50% -50%;
   border:2px black solid;
   color:black;
