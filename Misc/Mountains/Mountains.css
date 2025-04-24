@@ -1,0 +1,122 @@
+* {
+  padding:0;
+  margin:0;
+}
+
+html, body {
+  height:100%;
+  width:100%;
+  /* overflow-x: hidden; */
+}
+
+.header {
+  height:100%;
+  background-color: bisque;
+  background-image: url("./images/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  position:absolute;
+  z-index:100;
+  text-shadow: #FC0 1px 1px 1px;
+}
+
+.map {
+  height:100%;
+  background-color: aliceblue;
+  top:103%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/bg4.jpg");
+  background-size: cover;
+}
+
+.map .label {
+  position:absolute;
+  width:100%;
+  height:5%;
+  top:103%;
+
+  display:flex;
+  justify-content: center;
+  align-items:end;
+
+  color: black;
+  text-shadow: #FC0 1px 1px 1px;
+  font-size: 2rem;
+
+  z-index: 10;
+}
+
+.map .svg {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:103%;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.geography {
+  height:100%;
+  background-color: blue;
+  top:206%;
+}
+
+.geography h1 {
+  height:10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer {
+  height:3%;
+  background-color: black;
+}
+
+.new-element {
+  font-size: 5rem;
+  z-index: 1000;
+  position:absolute;
+  top:117%;
+  left:11%;
+  translate: -50% -50%;
+  border:2px black solid;
+  color:black;
+  background-color: rgba(255, 255, 255, 0.316);
+  box-shadow: 5px 5px 10px black;
+  color: black;
+  text-shadow: #FC0 1px 1px 1px;
+}
+
+.new-element-long {
+  font-size: 3rem;
+  z-index: 1000;
+  position:absolute;
+  top:117%;
+  left:11%;
+  translate: -50% -50%;
+  border:2px black solid;
+  color:black;
+  background-color: rgba(255, 255, 255, 0.316);
+  box-shadow: 5px 5px 10px black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-wrap-mode:nowrap;
+  color: black;
+  text-shadow: #FC0 1px 1px 1px;
+}

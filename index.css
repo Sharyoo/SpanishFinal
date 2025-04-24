@@ -168,7 +168,7 @@ h2 {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top:200%;
+    top:194.8%;
     height:5%;
     left:0%;
     width:20%;
@@ -186,7 +186,7 @@ h2 {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top:194.8%;
+    top:200%;
     height:5%;
     left:0%;
     width:20%;
@@ -209,16 +209,20 @@ a {
     align-items: center;
 }
 
-.test-button {
+.mountain-button {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top:189%;
+    top:189.6%;
     height:5%;
     left:0%;
     width:20%;
     border: 2px black solid;
     border-radius: 50px;
     color:white;
+}
+
+.mountain-button:hover {
+    background-color: rgba(119, 99, 232, 0.434);
 }

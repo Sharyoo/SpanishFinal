@@ -59,7 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(19, 151, 151);
   text-shadow: #FC0 1px 1px 1px;
   text-align: center;
   word-break: break-word;     /* allows breaking long words */
